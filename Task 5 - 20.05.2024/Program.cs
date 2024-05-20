@@ -26,7 +26,7 @@ namespace Task_5___20._05._2024
             #region Task 3
             //Console.Write("Bir cumle daxil edin: ");
             //string word = Console.ReadLine();
-            //FirstAndLastLetters(word);
+            //FirstLetters(word);
             #endregion
         }
 
@@ -68,12 +68,15 @@ namespace Task_5___20._05._2024
         #endregion
 
         #region Task 3
-        static void FirstAndLastLetters(string word)
+        static void FirstLetters(string word)
         {
             for (int i = 0; i < word.Length; i++)
             {
-                if(i == 0 || i == word.Length - 1)
+                if (i == 0)
                     Console.WriteLine(word[i]);
+
+                else if (word[i] == ' ')
+                    Console.WriteLine(word[i + 1]);
             }
         }
         #endregion
